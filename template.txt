@@ -1,0 +1,1 @@
+step1 : create a navbar having link of home product about us login and cart

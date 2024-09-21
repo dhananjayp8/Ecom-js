@@ -40,6 +40,7 @@ body {
 
 .nav-links li {
   margin: 0 15px;
+  cursor: pointer;
 }
 
 .nav-links a {
@@ -55,6 +56,39 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
+/* Hero section */
+.hero {
+  background-image: url(./images/pexels-fwstudio-33348-129731.jpg);
+  height: 40rem;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.desc {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1e201e;
+}
+.desc > h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.desc > p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 2rem;
+}
+.desc > button {
+  background-color: rgb(166, 155, 155);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -67,6 +101,7 @@ body {
     top: 60px;
     left: 0;
     background-color: #1e201e;
+    border-top: 1px solid #fff;
   }
 
   .nav-links.active {
@@ -76,7 +111,7 @@ body {
   }
 
   .nav-links li {
-    margin: 15px 0;
+    margin: 9px 0;
   }
   .nav-links li:hover {
     text-decoration: underline;
@@ -84,5 +119,9 @@ body {
 
   .menu-toggle {
     display: block;
+  }
+  /* Hero section */
+  .desc {
+    margin-top: 15rem;
   }
 }

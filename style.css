@@ -58,7 +58,7 @@ body {
 }
 /* Hero section */
 .hero {
-  background-image: url(./images/pexels-fwstudio-33348-129731.jpg);
+  background-image: url(./images/pexels-arina-krasnikova-5424912.jpg);
   height: 40rem;
   width: 100%;
   background-repeat: no-repeat;
@@ -89,6 +89,59 @@ body {
   font-weight: 400;
   margin-top: 1rem;
 }
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -122,6 +175,9 @@ body {
   }
   /* Hero section */
   .desc {
-    margin-top: 15rem;
+    margin-top: 18rem;
+  }
+  .desc p {
+    margin-top: 1.5rem;
   }
 }
